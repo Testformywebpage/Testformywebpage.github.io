@@ -1,0 +1,126 @@
+/* styles.css */
+
+.Layout {
+  background: linear-gradient(180deg, rgba(99, 170, 255, 0.30) 52.6%, rgba(100, 170, 255, 0.31) 52.61%, rgba(167, 207, 255, 0.31) 100%);
+background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0; 
+}
+.dark-mode {
+  /* Define aquí tus estilos para el modo oscuro */
+  /* Por ejemplo: */
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* Estilos para el encabezado */
+header {
+  background-color:  #183047;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  text-align: left;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+}
+.box {
+width: 300px;
+height: 90px;
+}
+
+.box .ellipse {
+position: fixed;
+width: 300px;
+height: 90px;
+top: 0;
+left: 0;
+background-color: #183047;
+border-radius: 250px/100px;
+
+}
+
+h1{
+ /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+   width: 300px;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  top: 0;
+  left: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+  z-index: 2; 
+}
+
+body {
+    background-color: #48a2c9  ;
+
+  }
+
+  .contenedor {
+    text-align: center;
+    margin: 0;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height:75vh;
+  }
+  
+  
+  img {
+
+    width: 250px;
+    height: 250px;
+  }
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer {
+  height: 25px;
+  background-color: #183047; /* Cambia el color de fondo del pie de página */
+  padding: 21px;
+}
+
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    /* Estilos específicos para pantallas con ancho máximo de 768px */
+    /* Por ejemplo, cambiar el tamaño del texto o ajustar el diseño */
+    body {
+      font-size: 14px;
+    }
+    
+    /* Otros estilos específicos para pantallas más pequeñas */
+  }
+  
+  /* Media query para pantallas medianas */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para pantallas con ancho entre 768px y 1024px */
+    /* Por ejemplo, ajustar el diseño de los elementos */
+  }
+  
+  /* Media query para pantallas grandes */
+  @media screen and (min-width: 1024px) {
+    /* Estilos específicos para pantallas con ancho mayor a 1024px */
+    /* Por ejemplo, utilizar un diseño de múltiples columnas */
+  }
+  
+
+
+  
