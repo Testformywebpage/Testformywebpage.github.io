@@ -1,50 +1,4 @@
 
-.Layout {
-  background: linear-gradient(180deg, rgba(99, 170, 255, 0.30) 52.6%, rgba(100, 170, 255, 0.31) 52.61%, rgba(167, 207, 255, 0.31) 100%);
-background-blend-mode: darken;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0; 
-}
-header {
-  background-color:  #183047;
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  text-align: left;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  z-index: 0;
-
-}
-.box {
-  width: 300px;
-  height: 90px;
-  }
-  
-  .box .ellipse {
-  position: fixed;
-  width: 300px;
-  height: 90px;
-  top: 0;
-  left: 0;
-  background-color: #183047;
-  border-radius: 250px/100px;
-  
-  }
-  .atras{
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 1;
-    margin-left: 100px;
-    margin-top:25px;
-  }
-
 .dark-mode {
   /* Define aquí tus estilos para el modo oscuro */
   /* Por ejemplo: */
@@ -52,65 +6,21 @@ header {
   color: #fff;
 }
 
-.Disca{
-  width: 20%;
-  height: 40%;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: right;
-  transform: rotate(-90deg);
-  margin-left: 25%;
-  margin-top: 1%;
-}
 
-.discapa{
-  margin-left: 30%;
-  margin-top: 10%;
-}
-.otrolado{
-  margin-right: 90%;
-  margin-top: 10%;
-}
-
-.ladobajo{
-  margin-left: 90%;
-  margin-top: 10%;
-}
 .container {
+  
     display: flex;
     justify-content: space-between;
-    margin: 55px;
-    justify-content: flex-end;
-    position: relative;
-
-    top: 25%;
-  left: 0;  
-  align-items: center;
-  height: auto;
+    margin: 50px;
   }
-  .menu {
-    width: 100%;
-    height: 115%;
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 0;
-  }
-  @media screen and (max-width: 768px) {
-    .menu {
-      height: 15%; /* Ajusta este valor para dispositivos móviles */
-    }
-  }
+  
   .columna {
 
     align-items: center;
   text-align: right;
-    margin-left: 400px;
-    margin-right: 148px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
-
   }
   
   .cuadro {
@@ -123,12 +33,11 @@ header {
   justify-content: right;
   align-items: center;
   text-align: right;
-  border-radius: 10px/10px;
-    }
+  }
 
 
   
-/*
+
 body{
   background-color: #212524;
 
@@ -137,45 +46,49 @@ body{
 
 img {
 
-  width: 10px;
-  height: 10px;
+  width: 300px;
+  height: 300px;
 }
 
-*/
+
 .fondo-borroso::before {
+
+
   content: "";
   background-image: url('https://i.postimg.cc/HnNSKfWV/logo.png');
-  background-size: contain; /* Utiliza "contain" en lugar de "cover" para asegurarte de que la imagen se ajuste completamente */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
-  position: fixed;
-  display: flex;
-  top: 8%; /* Ajusta la posición superior a 0 para que la imagen cubra toda la pantalla */
-  left: 0; /* Ajusta la posición izquierda a 0 para que la imagen cubra toda la pantalla */
-  width: 100%; /* Ajusta el ancho al 100% para cubrir toda la pantalla */
-  height: 100%; /* Ajusta la altura al 100% para cubrir toda la pantalla */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+
+  top: 30%;
+  left: 30%;
+
+
+  width: 200px;
+  height: 200px;
+
   filter: blur(4px);
   opacity: 0.6;
 }
 
 
-/* Media query para pantallas más pequeñas 
+/* Media query para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
-  /* Estilos específicos para pantallas con ancho máximo de 768px 
-  /* Por ejemplo, cambiar el tamaño del texto o ajustar el diseño 
+  /* Estilos específicos para pantallas con ancho máximo de 768px */
+  /* Por ejemplo, cambiar el tamaño del texto o ajustar el diseño */
   body {
     font-size: 14px;
   }
 }
 
-/* Media query para pantallas medianas 
+/* Media query para pantallas medianas */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  Estilos específicos para pantallas con ancho entre 768px y 1024px 
-  Por ejemplo, ajustar el diseño de los elementos 
+  /* Estilos específicos para pantallas con ancho entre 768px y 1024px */
+  /* Por ejemplo, ajustar el diseño de los elementos */
 }
-*/
-/* Media query para pantallas grandes 
+
+/* Media query para pantallas grandes */
 @media screen and (min-width: 1024px) {
-  Estilos específicos para pantallas con ancho mayor a 1024px 
-  Por ejemplo, utilizar un diseño de múltiples columnas
-}*/
+  /* Estilos específicos para pantallas con ancho mayor a 1024px */
+  /* Por ejemplo, utilizar un diseño de múltiples columnas */
+}
